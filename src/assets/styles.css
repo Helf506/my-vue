@@ -1,0 +1,84 @@
+/* styles.css */
+/* 通用样式重置等可自行补充 */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #42b983;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 12px 24px;
+  background: #42b983;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #357a5e;
+  transform: translateY(-2px);
+}
+
+input[type="file"] + label {
+  padding: 12px 24px;
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"] + label:hover {
+  background-color: #d0d0d0;
+  transform: translateY(-2px);
+}
+.content-box {
+  background-color: rgba(255, 255, 255, 0.85); /* 降低透明度 */
+}
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* 导航栏 - 深色半透 */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+.nav-bar a {
+  color: #fff;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+.nav-bar a:hover {
+  color: #4ecdc4;
+}
