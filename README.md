@@ -58,27 +58,6 @@ VUE_APP_API_BASE_URL=/api
 VUE_APP_DEBUG=true
 ```
 
-## 目录结构
-my-vue/
-├── public/               # 静态资源
-│   ├── favicon.ico
-│   └── logo.png
-├── src/
-│   ├── assets/           # 全局样式/图片
-│   ├── components/       # 可复用组件
-│   │   ├── Navigation.vue # 导航栏
-│   │   └── ImageUpload.vue # 上传组件
-│   ├── views/            # 页面视图
-│   │   ├── Home.vue      # 炫酷首页
-│   │   ├── Results.vue   # 分割结果页
-│   │   └── Upload.vue    # 图像上传
-│   ├── router/           # 路由配置
-│   ├── App.vue           # 根组件
-│   └── main.js           # 应用入口
-├── .env                  # 环境配置
-├── vue.config.js         # Vue CLI 配置
-└── package.json          # 项目依赖
-
 ## 技术亮点
 
 ### 前端技术栈
