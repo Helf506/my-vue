@@ -40,6 +40,7 @@ npm run build
 
 ### 开发服务器代理
 在 vue.config.js 中配置后端 API：
+```bash
 devServer: {
   proxy: {
     '/api': {
@@ -48,12 +49,14 @@ devServer: {
     }
   }
 }
+```
 
 ### 环境变量
 创建 .env 文件：
+```bash
 VUE_APP_API_BASE_URL=/api
 VUE_APP_DEBUG=true
-
+```
 
 ## 目录结构
 my-vue/
@@ -87,17 +90,21 @@ FontAwesome	 图标库	      6.7
 
 ### 特色实现
 1.玻璃拟态效果：
+```bash
 .content-card {
   background: rgba(255,255,255,0.2);
   backdrop-filter: blur(12px);
 }
+```
 
 2.智能坐标转换:
+```bash
 // Results.vue 中的坐标缩放算法
 scaleFactor.value = {
   x: displayedWidth / naturalWidth,
   y: displayedHeight / naturalHeight
 }
+```
 
 ## 关键设计点说明：
 1.动态徽章系统 - 实时显示技术栈版本
